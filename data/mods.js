@@ -82,11 +82,11 @@ Report bugs at <a href="https://romhack.ing/forum/topic/IycZ1p8Bin1Qvg_K4b2R" ta
 
     // --- Numbered steps. This is where you explain patching. ---
     install: [
-  "Get your own copy of the Japanese disc, SLPS-00269, as a BIN/CUE image. A redump-verified dump is strongly recommended — the hashes below only line up if you start from the same bytes as everyone else.",
+  "Get your own copy of the Japanese disc, SLPS-00269, as a BIN/CUE image. A redump-verified dump is strongly recommended - the hashes below only line up if you start from the same bytes as everyone else.",
 
   "Apply Lady Jessica's v0.8 translation first. This patch builds on it and cannot be applied to an unpatched disc. Her patch is not redistributed here.",
 
-  "Apply AM96_v0_8.ppf to the data track with PPF-O-Matic 3.0 or applyppf. If your dump is split one file per track, the data track is the first .bin — the one that's 500+ MB rather than a few dozen. Leave the 39 audio tracks alone.",
+  "Apply AM96_v0_8.ppf to the data track with PPF-O-Matic 3.0 or applyppf. If your dump is split one file per track, the data track is the first .bin - the one that's 500+ MB rather than a few dozen. Leave the 39 audio tracks alone.",
 
   "Check the file now matches the source hash: sha1 7b9b6e38f942bf6fff06a2f6d56f5318f5fc5aea. Use certutil -hashfile \"Track 01.bin\" SHA1 on Windows, sha1sum on Linux, or shasum -a 1 on macOS.",
 
@@ -101,14 +101,14 @@ Report bugs at <a href="https://romhack.ing/forum/topic/IycZ1p8Bin1Qvg_K4b2R" ta
     notes: `
       <p>Known issue: a handful of long airline names still overflow their box
       on the rankings screen. Cosmetic only. Also, some buttons have text that's rather big because of constraints.</p>
-      <p>No copyrighted game data is distributed here — this is a patch that
+      <p>No copyrighted game data is distributed here - this is a patch that
       you apply to a copy you already own.</p>
     `
   },
 
   {
     id: "harvest-moon-ds-gba-link",
-    title: "Harvest Moon DS — GBA Link Enabler",
+    title: "Harvest Moon DS - GBA Link Enabler",
     subtitle: "Save editor and connectivity patch",
     platform: "NDS",
     cover: "img/harvest-moon-ds-gba-link/cover.png",
