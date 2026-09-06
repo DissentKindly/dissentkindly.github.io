@@ -30,7 +30,7 @@ const MODS = [
     version: "1.0",
     released: "2026-09-06",
     status: "Complete",
-    target: "Port Royale 2 (Steam or GOG)",
+    target: "Port Royale 2 v1.1.2.3 (Steam or GOG)",
     // Checksum of the ORIGINAL disc the patch expects. Helps people
     // confirm they have the right dump before they complain to you.
 
@@ -72,19 +72,15 @@ You can support this work through my Ko-fi page to help me make more stuff!
 
     // --- Numbered steps. This is where you explain patching. ---
     install: [
-  "Run PortRoyale2ResolutionPatch (.exe on Windows). No installation, no Python needed — everything is inside the one file.
+      "Run PortRoyale2ResolutionPatch.exe. There is no installation and no Python needed — everything is inside the one file.",
 
-It finds your Port Royale 2 folder. If not, use Browse.
-Click the button for your monitor's resolution.
-Wait. It downloads UPX and dgVoodoo2 from their official releases the first time, then patches the game.
+      "It finds your Port Royale 2 folder on its own. If it doesn't, point it there with Browse.",
 
-To remove it, run the same program and click Uninstall. Your files come back byte-for-byte identical.
+      "Click the button for your monitor's resolution, then wait. On the first run it downloads UPX and dgVoodoo2 from their official releases before patching. That is the only time an internet connection is needed — the archives are kept next to the program, so later runs work offline.",
 
-An internet connection is needed on first run only. Downloaded archives are kept next to the program, so later runs are offline.
+      "Launch the game with PR2WS_Launch.exe, which sits in the game folder after installing. Starting PR2.exe directly still works, but you lose the pause and the cursor fix — those come from a small DLL the launcher injects. The game itself is untouched either way.",
 
-Launch the game with PR2WS_Launch.exe
-
-It sits in the game folder after installing. Starting PR2.exe directly still works, but you lose the pause and the cursor fix — those come from a small DLL the launcher injects. The game itself is untouched either way."
+      "To remove the patch, run the same program and click Uninstall. Your files come back byte-for-byte identical."
     ],
 
     // --- Anything else: credits, known issues, thanks. ---
@@ -117,7 +113,7 @@ It sits in the game folder after installing. Starting PR2.exe directly still wor
     patchFormat: "PPF 3.0 & xdelta",
     // Checksum of the ORIGINAL disc the patch expects. Helps people
     // confirm they have the right dump before they complain to you.
-    sourceHash: "md5 7b9b6e38f942bf6fff06a2f6d56f5318f5fc5aea",
+    sourceHash: "sha1 7b9b6e38f942bf6fff06a2f6d56f5318f5fc5aea (data track, after v0.8)",
 
     // --- Download button. Put the file in the files/ folder. ---
     download: {
