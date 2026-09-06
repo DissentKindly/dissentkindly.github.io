@@ -9,7 +9,89 @@
    ============================================================ */
 
 const MODS = [
+	{
+    // "id" becomes the page address: mod.html?id=air-management-96
+    // Use lowercase letters, numbers and dashes only. Must be unique.
+    id: "port-royale-2-widescreen",
 
+    title: "Port Royale 2 WideScreen Patch (+ Time Stop)",
+    subtitle: "Modern Resolution Patch For Port Royale 2 (PC)",
+
+    // Shown on the spine label. Short is better: PS1, NDS, GBA, SNES, MD...
+    platform: "PC",
+
+    // Image shown on the front page card. 4:3 or 16:9 both work.
+    cover: "img/port-royale-2-widescreen/cover.png",
+
+    // One or two sentences for the front page card.
+    blurb: "Play Port Royale 2 at a modern screen resolution - no more eyepatches needed - and stop time when you need to think instead of just making it very, very slow.",
+
+    // --- The record card at the top of the mod page ---
+    version: "1.0",
+    released: "2026-09-06",
+    status: "Complete",
+    target: "Port Royale 2 (Steam or GOG)",
+    // Checksum of the ORIGINAL disc the patch expects. Helps people
+    // confirm they have the right dump before they complain to you.
+
+    // --- Download button. Put the file in the files/ folder. ---
+    download: {
+      url: "files/Port Royale 2 WideScreen Patch (+ Time Stop).zip",
+      label: "Download Patch",
+      size: "64.7 MB"
+    },
+
+    // --- Screenshots. Put the images in img/<id>/ ---
+    screenshots: [
+      { src: "img/port-royale-2-widescreen/01.png", caption: "Main Menu 1600p" },
+	  { src: "img/port-royale-2-widescreen/02.png", caption: "Town View 1600p" }
+    ],
+
+    // --- Long text. Basic HTML is allowed: <p> <b> <i> <a> <br> ---
+    about: `
+      <p> Port Royale 2 — Modern Resolution Patch
+
+Widescreen and high-resolution support for Port Royale 2 v1.1.2.3 (Steam and GOG). Adds a pause the game never had, and fixes the cursor.
+
+PR2.exe is never modified, and everything is reversible.
+
+See the README for detailed information.
+
+You can support this work through my Ko-fi page to help me make more stuff!
+
+<a href="https://ko-fi.com/dissentkindly" target="_blank" rel="noopener">https://ko-fi.com/dissentkindly</a>
+</p>
+---
+    `,
+
+    // --- Bullet list. Delete the whole block if you don't want it. ---
+    changes: [
+"Play Port Royale 2 in Modern and Widescreen resolutions, 16:9 16:10 and Ultrawide",
+"Press T to stop time for when you need to do things at your leisure and without stuff constantly happening.",
+    ],
+
+    // --- Numbered steps. This is where you explain patching. ---
+    install: [
+  "Run PortRoyale2ResolutionPatch (.exe on Windows). No installation, no Python needed — everything is inside the one file.
+
+It finds your Port Royale 2 folder. If not, use Browse.
+Click the button for your monitor's resolution.
+Wait. It downloads UPX and dgVoodoo2 from their official releases the first time, then patches the game.
+
+To remove it, run the same program and click Uninstall. Your files come back byte-for-byte identical.
+
+An internet connection is needed on first run only. Downloaded archives are kept next to the program, so later runs are offline.
+
+Launch the game with PR2WS_Launch.exe
+
+It sits in the game folder after installing. Starting PR2.exe directly still works, but you lose the pause and the cursor fix — those come from a small DLL the launcher injects. The game itself is untouched either way."
+    ],
+
+    // --- Anything else: credits, known issues, thanks. ---
+    notes: `
+      <p>Known issues: The top bar's wood stops partway across, as it does in vanilla, leaving the right of the bar bare. The buttons and readouts are all correctly placed; only the background is short. Scrolling all the way down shows light stale pixels between the three bottom panels, cosmetic and definitely not jarring or anything. Fixes for both were attempted at length.</p>
+    `
+  },
   {
     // "id" becomes the page address: mod.html?id=air-management-96
     // Use lowercase letters, numbers and dashes only. Must be unique.
