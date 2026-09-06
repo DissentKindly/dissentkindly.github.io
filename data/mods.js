@@ -43,8 +43,8 @@ const MODS = [
 
     // --- Screenshots. Put the images in img/<id>/ ---
     screenshots: [
-      { src: "img/port-royale-2-widescreen/01.png", caption: "Main Menu 1600p" },
-	  { src: "img/port-royale-2-widescreen/02.png", caption: "Town View 1600p" }
+      { src: "img/port-royale-2-widescreen/01.jpg", caption: "Main Menu 1600p" },
+	  { src: "img/port-royale-2-widescreen/02.jpg", caption: "Town View 1600p" }
     ],
 
     // --- Long text. Basic HTML is allowed: <p> <b> <i> <a> <br> ---
