@@ -36,7 +36,7 @@ const MODS = [
 
     // --- Download button. Put the file in the files/ folder. ---
     download: {
-      url: "files/Port Royale 2 WideScreen Patch (+ Time Stop).zip",
+      url: "https://files.catbox.moe/jbn17f.zip",
       label: "Download Patch",
       size: "64.7 MB"
     },
